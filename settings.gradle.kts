@@ -15,4 +15,3 @@ pluginManagement {
 }
 
 rootProject.name = "renovate-gradle-wrapper-bug-reproducer"
-include("subproject")
