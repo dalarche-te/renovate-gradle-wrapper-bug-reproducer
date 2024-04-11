@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":dependencyDashboard",
+    ":rebaseStalePrs",
+    ":semanticCommitTypeAll(chore)"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "maven"
+      ],
+      "groupName": "maven",
+      "recreateWhen": "never"
+    }
+  ],
+  "major": {
+    "dependencyDashboardApproval": true
+  }
+}
